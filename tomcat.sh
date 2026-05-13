@@ -49,9 +49,6 @@ sh apache-tomcat-9.0.112/bin/startup.sh
 ps -ef | grep tomcat
 ss -tulnp | grep 8080
 
-vi apache-tomcat-9.0.112/webapps/manager/META-INF/context.xml
-cat <<EOF > <Context antiResourceLocking="false" privileged="true"> </Context>
-EOF
 
 echo "Tomcat URL: http://<server-ip>:8080"
 echo "Manager URL: http://<server-ip>:8080/manager/html"
